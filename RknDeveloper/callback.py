@@ -12,7 +12,7 @@ async def chk(bot, cb : CallbackQuery):
         if cb.message.chat.type == enums.ChatType.PRIVATE:
             keyboard = InlineKeyboardMarkup([[
                 #⚠️ don't change source code & source link ⚠️ #
-                InlineKeyboardButton("💡 𝘐𝘯𝘧𝘰", callback_data = "about")
+                InlineKeyboardButton("💡 𝘐𝘯𝘧𝘰 💡", callback_data = "about")
                     ],[
                 InlineKeyboardButton("𝘜𝘱𝘥𝘢𝘵𝘦𝘴 💭", url="https://t.me/cv_offical"),
                 InlineKeyboardButton("🌐 Sᴜᴘᴘᴏʀᴛ", url="http://t.me/TheMakiBoT?startgroup=true")
