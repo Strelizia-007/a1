@@ -10,7 +10,7 @@ class Config:
     UPDATECHANNEL_ID = int(getenv("UPDATECHANNEL_ID", "-1001574664407"))
     ADMIN = list(map(int, getenv("ADMIN", "6047510747").split()))
     MONGO_URI = getenv("MONGO_URI", "mongodb+srv://ironman:ironman@cluster0.o1yjwis.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002116542152))
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002116542152"))
     
     #web response 
     WEBHOOK = bool(os.environ.get("WEBHOOK", True))
