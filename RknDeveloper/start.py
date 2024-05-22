@@ -47,13 +47,13 @@ async def op(bot, m :Message):
         if m.chat.type == enums.ChatType.PRIVATE:
             keyboard = InlineKeyboardMarkup([[
                 #⚠️ don't change source code & source link ⚠️ #
-                InlineKeyboardButton("─シ｡Aʙᴏᴜᴛ｡シ─", callback_data = "about")
+                InlineKeyboardButton("💡 𝘐𝘯𝘧𝘰", callback_data = "about")
                     ],[
-                InlineKeyboardButton("𖣘 Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ", url="https://t.me/cv_offical"),
-                InlineKeyboardButton("⚘ Sᴜᴘᴘᴏʀᴛ ⚘", url="http://t.me/TheMakiBoT?startgroup=true")
+                InlineKeyboardButton("𝘜𝘱𝘥𝘢𝘵𝘦𝘴 💭", url="https://t.me/cv_offical"),
+                InlineKeyboardButton("🌐 Sᴜᴘᴘᴏʀᴛ", url="http://t.me/TheMakiBoT?startgroup=true")
                 ],[
-                InlineKeyboardButton("✛ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Cʜᴀɴɴᴇʟ ࿇", url=f"https://t.me/{rkn1.BOT_USERNAME}?startchannel=Bots4Sale&admin=invite_users+manage_chat")],[
-                InlineKeyboardButton("✛ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ࿇", url=f"https://t.me/{rkn1.BOT_USERNAME}?startgroup=Bots4Sale&admin=invite_users+manage_chat")
+                InlineKeyboardButton("+ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Cʜᴀɴɴᴇʟ +", url=f"https://t.me/{rkn1.BOT_USERNAME}?startchannel=Bots4Sale&admin=invite_users+manage_chat")],[
+                InlineKeyboardButton("+ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ +", url=f"https://t.me/{rkn1.BOT_USERNAME}?startgroup=Bots4Sale&admin=invite_users+manage_chat")
                 
             ]])            
     
@@ -68,7 +68,7 @@ async def op(bot, m :Message):
             keyboar = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Pʀɪᴠᴀᴛᴇ", url="https://t.me/{rkn1.BOT_USERNAME}?start=start")
+                        InlineKeyboardButton("Pʀɪᴠᴀᴛᴇ", url="https://t.me/AutoRequestAccepterBot?start=start")
                     ]
                 ]
             )
