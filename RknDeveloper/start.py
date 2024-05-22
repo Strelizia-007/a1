@@ -32,7 +32,7 @@ async def Start_message(bot, m: Message):
 
     user = m.from_user
     await db.add_user(bot, user)
-    await m.reply_photo(photo=Config.START_PIC, caption=Txt.START_MSG.format(mq.from_user.mention), reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('+ 𝘈𝘥𝘥 𝘔𝘦 +', url='https://t.me/AutoRequestAccepterBot?startgroup')]]))
+    await m.reply_photo(photo=Config.START_PIC, caption=Txt.START_MSG.format(m.from_user.mention), reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('+ 𝘈𝘥𝘥 𝘔𝘦 +', url='https://t.me/AutoRequestAccepterBot?startgroup')]]))
 
 @Client.on_chat_join_request(filters.group | filters.channel & ~filters.private)
 async def approve(bot, m : Message):
