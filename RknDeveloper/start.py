@@ -28,7 +28,7 @@ gif = [
 # Main Process _ _ _ _ _ Users Send Massage 🥀__🥀 Please 😢 Give Credit
 
 @Client.on_message(filters.private & filters.command('start'))
-async def Start_message(bot: m, m: Message):
+async def Start_message(bot, m: Message):
 
     user = m.from_user
     await db.add_user(bot, user)
