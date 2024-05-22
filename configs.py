@@ -4,7 +4,7 @@ import os
 class Config:
     API_ID = int(getenv("API_ID", "29922662"))
     API_HASH = getenv("API_HASH", "fabd9f89368de7cc31357522a0089a56")
-    BOT_TOKEN = getenv("BOT_TOKEN", "6410417594:AAG4GmfMx8UkbgCxypy24OX_Ht-90CR75sc")
+    BOT_TOKEN = getenv("BOT_TOKEN", "6752673741:AAEBQf_ZescNZlF_bp6V6b8b_bpuMXXyr0s")
     UPDATE_CHANNEL = getenv("UPDATE_CHANNEL", "CV_Offical")
     UPDATECHANNEL_ID = int(getenv("UPDATECHANNEL_ID", "-1001574664407"))
     ADMIN = list(map(int, getenv("ADMIN", "6047510747").split()))
