@@ -27,6 +27,13 @@ gif = [
 
 # Main Process _ _ _ _ _ Users Send Massage 🥀__🥀 Please 😢 Give Credit
 
+@Client.on_message(filters.private & filters.command('start'))
+async def Start_message(bot: m, m: Message):
+
+    user = m.from_user
+    await db.add_user(bot, user)
+    await m.reply_photo(photo=Config.START_PIC, caption=Txt.START_MSG.format(mq.from_user.mention), reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('+ 𝘈𝘥𝘥 𝘔𝘦 +', url='https://t.me/AutoRequestAccepterBot?startgroup')]]))
+
 @Client.on_chat_join_request(filters.group | filters.channel & ~filters.private)
 async def approve(bot, m : Message):
     op = m.chat
@@ -54,7 +61,7 @@ async def approve(bot, m : Message):
 
 # Start Massage _____ # Please 😢 Give Credit 
 
-@Client.on_message(filters.command("start"))
+@Client.on_message(filters.command("s"))
 async def op(bot, m :Message):
     try:
         await bot.get_chat_member(rkn1.UPDATECHANNEL_ID, m.from_user.id) 
